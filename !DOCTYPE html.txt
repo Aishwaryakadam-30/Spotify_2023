@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='n'
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cropping</title>
+    <style>
+        
+        .image-container { 
+            width: 320px;
+	    height:180px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px; /* Rounded corners */
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            
+        }
+
+        /* This will ensure the img tag fills the container and gets cropped */
+        .image{
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover; /* Ensures image fills and is cropped */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <!-- The image will be shown inside the container -->
+        <img src='ttps://your-image-url-here.com' alt= 'Album Cover' class= 'image'>
+    </div>
+
+</body>
+</html>
